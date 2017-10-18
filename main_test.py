@@ -5,9 +5,14 @@ Created on 2016-7-26
 Project:整合自动发邮件功能，执行测试用例生成最新测试报告，取最新的测试报告，发送最新测试报告
 问题，邮件始终不能显示html：将电脑时间改为北京时间即可
 '''
+import os
+import sys
+import time
+import unittest
 from HTMLTestRunner import HTMLTestRunner
-import time,os,unittest,sys
-from sendmail import MyMail
+
+from Common.sendmail import MyMail
+
 
 #1.产生测试套件
 def createSuite():
