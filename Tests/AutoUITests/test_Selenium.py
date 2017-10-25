@@ -1,7 +1,7 @@
 # coding=utf-8
 
 import sys
-import os,unittest
+import os
 reload(sys)
 sys.setdefaultencoding("utf-8")
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))
@@ -10,19 +10,24 @@ from Util import *
 from selenium import webdriver
 import time
 
+selenium_yml = '/config/selenium.yml'
 
-class test_login(unittest.TestCase):
+
+class test_login(object):
+    def __init__(self):
+        pass
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Firefox()
+        site = ConfigUtil.get('site', path=selenium_yml)
+        cls.driver = webdriver.Chrome()
         cls.driver.implicitly_wait(30)
-        cls.url = "http://mail.126.com"
-        cls.suffix = '@126.com'
-        cls.user = "tafffy"
-        cls.passwd = "lovesoo1314"
-        cls.title = u'网易'
-        cls.tips = u'帐号或密码错误'
+        cls.url = site['url']
+        cls.title = site['title']
+        cls.tips = site['tips']
+        cls.suffix = site['suffix']
+        cls.user = site['user']
+        cls.passwd = site['passwd']
 
     @classmethod
     def tearDownClass(cls):
