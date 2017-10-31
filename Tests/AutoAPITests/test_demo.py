@@ -1,8 +1,7 @@
 # encoding: utf-8
 
-import os,sys,unittest
-#import importlib
-#importlib.reload(sys)
+import sys
+import os
 reload(sys)
 sys.setdefaultencoding("utf-8")
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))   # equal sys.path.append('../..')
@@ -10,10 +9,12 @@ from Util import *
 from functools import partial
 
 
-class test_demo(unittest.TestCase):
+class test_demo(object):
     """接口测试demo"""
- #   def __init__(self, ):
- #       pass
+
+    def __init__(self, ):
+        pass
+
     @staticmethod
     def baidu(wd):
         name = 's'
@@ -29,7 +30,7 @@ class test_demo(unittest.TestCase):
         # http接口调用demo
         # 校验输入不同类型的wd时，百度是否均可正常搜索返回结果
         # wd分类：中文，英文，数字
-        wd_list = [u'taffy', u'autotest', u'12345']
+        wd_list = [u'taffy', u'自动化测试', u'12345']
         for wd in wd_list:
             f = partial(test_demo.baidu, wd)
             f.description = 'search: %s' % wd
@@ -59,16 +60,19 @@ class test_demo(unittest.TestCase):
         id = 123456789
         HessianUtil.Invoke(method, req, id)
 
+    @nottest
     def test_webservice(self):
         # webservice接口调用demo
         url = 'http://www.gpsso.com/WebService/Dream/Dream.asmx?wsdl'
         WebServiceUtil.Invoke(url, "SearchDreamInfo", u'太阳')
 
-#    @nottest
- #   def test_db(self):
+    @nottest
+    def test_db(self):
         # 数据库操作demo
-       # print DBUtil.execute('select * from user_info limit 1;', database='user')
-      #  print DBUtil.execute('select * from user.dbo.user_info;', database='user', confSection='Mysql')
+        print DBUtil.execute('select * from user_info limit 1;', database='user')
+        print DBUtil.execute('select * from user.dbo.user_info;', database='user', confSection='Sqlserver')
+
+    @nottest
     def test_OA(self):
         # 正交表设计测试用例demo
         oat = OAT()
@@ -92,21 +96,22 @@ class test_demo(unittest.TestCase):
                              ('B', ['B1']),
                              ('C', ['C1'])])
 
-        print (json.dumps(oat.genSets(case1)))
-        print (json.dumps(oat.genSets(case2)))
-        print (json.dumps(oat.genSets(case3)))
-        print (json.dumps(oat.genSets(case4)))
-        print (json.dumps(oat.genSets(case4, 1, 0)))
-        print (json.dumps(oat.genSets(case4, 1, 1)))
-        print (json.dumps(oat.genSets(case4, 1, 2)))
-        print (json.dumps(oat.genSets(case4, 1, 3)))
+        print json.dumps(oat.genSets(case1))
+        print json.dumps(oat.genSets(case2))
+        print json.dumps(oat.genSets(case3))
+        print json.dumps(oat.genSets(case4))
+        print json.dumps(oat.genSets(case4, 1, 0))
+        print json.dumps(oat.genSets(case4, 1, 1))
+        print json.dumps(oat.genSets(case4, 1, 2))
+        print json.dumps(oat.genSets(case4, 1, 3))
 
     @nottest
     def test_redis(self):
         # redis/redis cluster操作 demo
-        print (RedisUtil.execute('hexists', 'Search:HotWord', u'刘德华'))
-        print (RedisUtil.execute("get", "userSession:%s", "12345", confSection='Redis_Cluster'))
+        print RedisUtil.execute('hexists', 'Search:HotWord', u'刘德华')
+        print RedisUtil.execute("get", "userSession:%s", "12345", confSection='Redis_Cluster')
 
+    @nottest
     def test_security(self):
         # 加密方法使用demo
         import string
@@ -115,13 +120,13 @@ class test_demo(unittest.TestCase):
         key_16 = string.lowercase[:16]
         data = 'Taffy is a Test Automation Framework based on nosetests.'
 
-        print ('DES:', sec.getDES(key_8, data).encode('hex'))  # des
-        print ('Decode DES:', sec.decodeDES(key_8, sec.getDES(key_8, data)))  # decode des
-        print ('DES3:', sec.getDES3(key_16, data).encode('hex'))  # desc3
-        print ('Decode DES3:', sec.decodeDES3(key_16, sec.getDES3(key_16, data)))  # decode desc3
-        print ('HMAC_SHA1:', sec.getHMAC_SHA1(key_8, data))  # sha1
-        print ('SHA:', sec.getSHA(data))  # shaz
-        print ('MD5:', sec.getMD5(data) ) # md5
-        print ('AES:', sec.getAES(key_16, data).encode('hex'))  # aes
-        print ('Base64:', sec.getBase64(data))  # base64
-        print ('Decode Base64:', sec.decodeBase64(sec.getBase64(data)))  # decode base64
+        print 'DES:', sec.getDES(key_8, data).encode('hex')  # des
+        print 'Decode DES:', sec.decodeDES(key_8, sec.getDES(key_8, data))  # decode des
+        print 'DES3:', sec.getDES3(key_16, data).encode('hex')  # desc3
+        print 'Decode DES3:', sec.decodeDES3(key_16, sec.getDES3(key_16, data))  # decode desc3
+        print 'HMAC_SHA1:', sec.getHMAC_SHA1(key_8, data)  # sha1
+        print 'SHA:', sec.getSHA(data)  # sha
+        print 'MD5:', sec.getMD5(data)  # md5
+        print 'AES:', sec.getAES(key_16, data).encode('hex')  # aes
+        print'Base64:', sec.getBase64(data)  # base64
+        print'Decode Base64:', sec.decodeBase64(sec.getBase64(data))  # decode base64
