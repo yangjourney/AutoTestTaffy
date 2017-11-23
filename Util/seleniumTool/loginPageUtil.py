@@ -5,6 +5,8 @@ loginPageUtil.py
 """
 
 from selenium.webdriver.common.by import By
+
+from Util import ConfigUtil
 from basePageUtil import basePage
 from Util import *
 
