@@ -1,0 +1,8 @@
+1512117523264	geckodriver	INFO	Listening on 127.0.0.1:22353
+1512117525281	geckodriver::marionette	INFO	Starting browser D:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1512117530222	Marionette	INFO	Listening on port 22365
+1512117530496	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://10.2.5.139:5000/lib/js/ext-all.js, line 22: unreachable code after return statement
+JavaScript warning: http://10.2.5.139:5000/lib/js/ext-all.js, line 22: unreachable code after return statement
+JavaScript error: http://cache.amap.com/lbs/static/addToolbar.js, line 6: ReferenceError: map is not defined
+1512117544401	Marionette	INFO	New connections will no longer be accepted

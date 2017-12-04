@@ -1,0 +1,6 @@
+1511514900084	geckodriver	INFO	Listening on 127.0.0.1:22299
+1511514901830	geckodriver::marionette	INFO	Starting browser D:\Program Files\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1511514911508	Marionette	INFO	Listening on port 22309
+1511514911945	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511514977598	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1511515244751	Marionette	INFO	Ceased listening
