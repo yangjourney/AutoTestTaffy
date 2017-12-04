@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-import sys
+import sys,unittest
 import os
 reload(sys)
 sys.setdefaultencoding("utf-8")
@@ -9,11 +9,11 @@ from Util import *
 from functools import partial
 
 
-class test_demo(object):
+class test_demo(unittest.TestCase):
     """接口测试demo"""
 
-    def __init__(self, ):
-        pass
+    #def __init__(self):
+    #   pass
 
     @staticmethod
     def baidu(wd):

@@ -1,5 +1,5 @@
 [LOGGING]
-log_file = D:\Taffy-master\logs\log.txt
+log_file = D:\AutoTests-master\logs\log.txt
 max_bytes_each = 512000
 backup_count = 10
 fmt = |(asctime)s |(filename)s[line: |(lineno)d] |(levelname)s: |(message)s

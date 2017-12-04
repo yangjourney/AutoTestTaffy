@@ -1,0 +1,87 @@
+2017-12-04 09:42:43,193 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 09:42:43,194 main_test.py[line: 64] INFO: Test Report Sending...
+2017-12-04 09:42:44,114 main_test.py[line: 67] INFO: Sending Success!
+2017-12-04 09:46:34,213 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 09:46:34,214 main_test.py[line: 64] INFO: Test Report Sending...
+2017-12-04 09:46:34,790 main_test.py[line: 67] INFO: Sending Success!
+2017-12-04 09:47:59,384 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 09:47:59,384 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 09:47:59,956 main_test.py[line: 68] INFO: Sending Success!
+2017-12-04 11:20:10,907 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 11:20:10,907 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 11:20:11,588 main_test.py[line: 68] INFO: Sending Success!
+2017-12-04 11:30:39,427 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 11:30:39,427 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 11:30:40,045 main_test.py[line: 68] INFO: Sending Success!
+2017-12-04 11:35:53,434 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 11:35:53,434 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 11:39:24,670 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 11:39:24,671 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 11:39:25,217 main_test.py[line: 68] INFO: Sending Success!
+2017-12-04 11:45:57,967 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 11:45:57,967 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 11:45:58,551 main_test.py[line: 68] INFO: Sending Success!
+2017-12-04 11:54:58,433 main_test.py[line: 63] INFO: Building Test Report Success!
+2017-12-04 11:54:58,433 main_test.py[line: 66] INFO: Test Report Sending...
+2017-12-04 11:54:59,051 main_test.py[line: 69] INFO: Sending Success!
+2017-12-04 13:36:50,176 main_test.py[line: 63] INFO: Building Test Report Success!
+2017-12-04 13:36:50,177 main_test.py[line: 66] INFO: Test Report Sending...
+2017-12-04 13:36:50,710 main_test.py[line: 69] INFO: Sending Success!
+2017-12-04 13:38:56,618 main_test.py[line: 63] INFO: Building Test Report Success!
+2017-12-04 13:38:56,618 main_test.py[line: 66] INFO: Test Report Sending...
+2017-12-04 13:38:57,141 main_test.py[line: 69] INFO: Sending Success!
+2017-12-04 13:43:13,108 main_test.py[line: 63] INFO: Building Test Report Success!
+2017-12-04 13:43:13,108 main_test.py[line: 66] INFO: Test Report Sending...
+2017-12-04 13:43:13,647 main_test.py[line: 69] INFO: Sending Success!
+2017-12-04 13:45:36,971 main_test.py[line: 63] INFO: Building Test Report Success!
+2017-12-04 13:45:36,973 main_test.py[line: 66] INFO: Test Report Sending...
+2017-12-04 13:45:37,572 main_test.py[line: 69] INFO: Sending Success!
+2017-12-04 14:02:40,283 main.py[line: 69] INFO: Building Test Report Success!
+2017-12-04 14:04:49,290 main.py[line: 66] INFO: Building Test Report Success!
+2017-12-04 14:04:49,290 main.py[line: 67] INFO: Test Report Sending...
+2017-12-04 14:04:49,900 main.py[line: 70] INFO: Sending Success!
+2017-12-04 14:10:38,841 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 14:10:38,842 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 14:10:39,549 main_test.py[line: 68] INFO: Sending Success!
+2017-12-04 14:11:31,696 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 14:11:31,697 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 14:11:32,398 main_test.py[line: 68] INFO: Sending Success!
+2017-12-04 14:12:33,325 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 14:12:33,325 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 14:12:34,072 main_test.py[line: 68] INFO: Sending Success!
+2017-12-04 14:13:14,726 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 14:13:14,726 main_test.py[line: 64] INFO: Test Report Sending...
+2017-12-04 14:13:15,305 main_test.py[line: 67] INFO: Sending Success!
+2017-12-04 14:13:47,256 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 14:13:47,257 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 14:13:47,812 main_test.py[line: 68] INFO: Sending Success!
+2017-12-04 14:14:15,365 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 14:14:15,367 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 14:14:16,088 main_test.py[line: 68] INFO: Sending Success!
+2017-12-04 14:14:34,434 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 14:14:34,434 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 14:14:35,012 main_test.py[line: 68] INFO: Sending Success!
+2017-12-04 14:15:46,197 main_test.py[line: 62] INFO: Building Test Report Success!
+2017-12-04 14:15:46,197 main_test.py[line: 65] INFO: Test Report Sending...
+2017-12-04 14:15:46,957 main_test.py[line: 68] INFO: Sending Success!
+2017-12-04 14:19:18,253 main.py[line: 66] INFO: Building Test Report Success!
+2017-12-04 14:19:18,255 main.py[line: 68] INFO: Test Report Sending...
+2017-12-04 14:19:18,924 main.py[line: 71] INFO: Sending Success!
+2017-12-04 16:08:34,296 main.py[line: 55] INFO: Begin to UI Testing!
+2017-12-04 16:08:56,769 main.py[line: 60] INFO: Building Test Report Success!
+2017-12-04 16:08:56,769 main.py[line: 62] INFO: Ready to Sending Mail!
+2017-12-04 16:08:57,819 main.py[line: 69] INFO: Sending...
+2017-12-04 16:08:58,644 main.py[line: 72] INFO: Successful!
+2017-12-04 16:09:36,214 main.py[line: 55] INFO: Begin to UI Testing!
+2017-12-04 16:09:57,796 main.py[line: 60] INFO: Building Test Report Success!
+2017-12-04 16:09:57,799 main.py[line: 62] INFO: Ready to Sending Mail!
+2017-12-04 16:11:09,910 main.py[line: 55] INFO: Begin to UI Testing!
+2017-12-04 16:11:31,921 main.py[line: 60] INFO: Building Test Report Success!
+2017-12-04 16:11:31,921 main.py[line: 62] INFO: Ready to Sending Mail!
+2017-12-04 16:11:32,802 main.py[line: 69] INFO: Sending...
+2017-12-04 16:11:33,375 main.py[line: 72] INFO: Successful!
+2017-12-04 16:11:49,638 main.py[line: 55] INFO: Begin to UI Testing!
+2017-12-04 16:12:12,022 main.py[line: 60] INFO: Building Test Report Success!
+2017-12-04 16:12:12,022 main.py[line: 62] INFO: Ready to Sending Mail!
+2017-12-04 16:12:12,884 main.py[line: 69] INFO: Sending...
+2017-12-04 16:12:13,572 main.py[line: 72] INFO: Successful!

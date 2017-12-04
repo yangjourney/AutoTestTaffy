@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Tests/AutoAPITests" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tests/AutoLoadTests" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tests/AutoUITests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Common" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/config" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

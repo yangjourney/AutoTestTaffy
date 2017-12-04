@@ -28,11 +28,10 @@ class MyMail:
             self.smtp = smtplib.SMTP_SSL()
         else:
             self.smtp = smtplib.SMTP()
-
-
     # 连接到服务器
     def connect(self):
-        self.smtp.connect(self.host, self.port)
+        #self.smtp.connect(self.host, self.port)
+        self.smtp.connect(self.host, 465)
 
     # 登陆邮件服务器
     def login(self):
@@ -54,17 +53,14 @@ class MyMail:
         # 添加邮件内容
         content = MIMEText(mail_content, _charset='gbk')
         # 说明，这里_charset必须为gbk，和# -*- coding:GBK -*- 保持一直，否则邮件内容乱码
-
         msg.attach(content)
-
         for attachment_path in attachment_path_set:
             if os.path.isfile(attachment_path): # 如果附件存在
                 type, coding = mimetypes.guess_type(attachment_path)
                 if type == None:
                     type = 'application/octet-stream'
-
                 major_type, minor_type = type.split('/', 1)
-                with open(attachment_path, 'r', encoding='GB2312') as file:
+                with open(attachment_path) as file:
                     if major_type == 'text':
                         attachment = MIMEText(file.read(), _subtype=minor_type, _charset='GB2312')
                     elif major_type == 'image':
@@ -73,14 +69,13 @@ class MyMail:
                         attachment = MIMEApplication(file.read(), _subtype=minor_type)
                     elif major_type == 'audio':
                         attachment = MIMEAudio(file.read(), _subtype=minor_type)
-
+                    elif major_type == 'html':
+                        attachment = MIMEText(file.read(),'utf-8')
                 # 修改附件名称
                 attachment_name = os.path.basename(attachment_path)
                 attachment.add_header('Content-Disposition', 'attachment', filename = ('gbk', '', attachment_name))
                 # 说明：这里的('gbk', '', attachment_name)解决了附件为中文名称时，显示不对的问题
-
                 msg.attach(attachment)
-
         # 得到格式化后的完整文本
         full_text = msg.as_string()
 

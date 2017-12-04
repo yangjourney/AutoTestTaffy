@@ -20,7 +20,7 @@ class test_login(object):
     @classmethod
     def setUpClass(cls):
         site = ConfigUtil.get('site', path=selenium_yml)
-        cls.driver = webdriver.Chrome()
+        cls.driver = webdriver.Firefox()
         cls.driver.implicitly_wait(30)
         cls.url = site['url']
         cls.title = site['title']
