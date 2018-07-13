@@ -2,7 +2,7 @@ nose==1.3.7
 redis==2.10.6
 redis_py_cluster==1.3.4
 requests==2.18.4
-pycrypto==2.6.1
+pycrypto
 DBUtils==1.2
 suds==0.4
 six==1.11.0
